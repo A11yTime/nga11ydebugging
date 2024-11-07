@@ -1,0 +1,76 @@
+/* app.component.css */
+
+/* Default styles for elements with role="button", role="link", and other roles */
+[role="button"]:before,
+[role="link"]:before,
+[role="dialog"]:before,
+[role="navigation"]:before,
+[role="alert"]:before,
+[role="alertdialog"]:before,
+[role="header"]:before {
+    content: "🚨 ROLE: " attr(role); /* Display the role name before the element */
+    border: 2px solid darkred; /* Dark red border to highlight the role */
+    color: darkred; /* Dark red text color */
+    display: inline-block; /* Makes the content inline with the element */
+    padding: 0 5px; /* Padding around the role name */
+    margin: 2px 5px 2px 0; /* Margin to separate from the element */
+    border-radius: 5px; /* Rounded corners */
+    background: white; /* White background to make text stand out */
+    font-size: 14px; /* Font size for readability */
+    font-family: sans-serif; /* Sans-serif font for better readability */
+    font-weight: bold; /* Bold text for visibility */
+}
+
+/* Special styling for buttons (role="button") */
+button[role="button"]:before {
+    content: "⚠️ ROLE: " attr(role); /* Change to a more specific alert icon for buttons */
+    border-color: orange; /* Orange border for buttons */
+    color: black; /* Black text for better contrast */
+}
+
+/* Special styling for links (role="link") */
+a[role="link"]:before {
+    content: "⚠️ ROLE: " attr(role); /* Same alert icon for links */
+    border-color: #0066cc; /* Blue border for links */
+    color: #0066cc; /* Blue text for links */
+}
+
+/* Special styling for dialogs (role="dialog") */
+[role="dialog"]:before {
+    content: "🔳 ROLE: dialog";
+    border-color: green; /* Green border for dialogs */
+    color: green; /* Green text for dialog elements */
+    background-color: #e8f5e9; /* Light green background */
+}
+
+/* Special styling for navigation (role="navigation") */
+[role="navigation"]:before {
+    content: "🔗 ROLE: navigation";
+    border-color: #0288d1; /* Blue border for navigation */
+    color: #0288d1; /* Blue text for navigation elements */
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+/* Special styling for alert (role="alert") */
+[role="alert"]:before {
+    content: "🚨 ROLE: alert";
+    border-color: red; /* Red border for alerts */
+    color: red; /* Red text for alerts */
+    background-color: #ffebee; /* Light red background */
+}
+
+/* Special styling for alertdialog (role="alertdialog") */
+[role="alertdialog"]:before {
+    content: "⚠️ ROLE: alertdialog";
+    border-color: #f44336; /* Darker red border for alert dialogs */
+    color: white; /* White text for alert dialogs */
+    background-color: #d32f2f; /* Dark red background */
+}
+
+/* Special styling for header (role="header") */
+[role="header"]:before {
+    content: "📰 ROLE: header";
+    border-color: #4caf50; /* Green border for header */
+    color: #4caf50; /* Green text for header elements */
+    background-color: #c8e6c9; /* Light green background */
+}

@@ -1,0 +1,28 @@
+/* app.component.css */
+button[aria-label], a[aria-label] {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling for buttons and links with error */
+  button.error, a.error {
+    border-color: red;
+    color: red;
+  }
+  
+  /* Error message that shows when aria-label matches the text content */
+  button.error::before, a.error::before {
+    content: "⚠️ ERROR: aria-label matches button/text!";
+    border-color: red;
+    color: red;
+    background-color: #ffebee;
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  

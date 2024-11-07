@@ -1,0 +1,42 @@
+/* Global styles for centering the entire body */
+html, body {
+  height: 100%; /* Ensure full height */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Horizontally center the content */
+  align-items: flex-start; /* Align content to the top, adjust if you want it centered vertically */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text inside the body */
+}
+
+.container {
+  width: 100%; /* Allow container to take full width */
+  max-width: 100%; /* Optional: Add max-width to limit content width */
+  padding: 20px;
+}
+
+/* Styling the hr element */
+hr {
+  border: 0; /* Remove the default border */
+  border-top: 5px solid #7403039e; /* Solid line with custom color */
+  color: #7403039e; /* Ensure the color matches the line color */
+  background-color: #7403039e; /* Set a background color */
+  margin: 20px 0; /* Add some space around the hr */
+  width: 80%; /* Optional: Limit the width of the line */
+  align-self: center; /* Ensure the hr is centered in the container */
+}
+
+/* Styling for the heading section */
+.heading {
+  padding: 1rem;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  width: 100%; /* Ensure it takes up full width */
+  box-sizing: border-box; /* Prevent padding from overflowing */
+}
+
+/* Optional: Styling for each component section */
+div {
+  margin: 15px 0; /* Add margin to separate the divs */
+}

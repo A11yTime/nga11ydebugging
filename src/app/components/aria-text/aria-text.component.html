@@ -1,0 +1,16 @@
+<!-- aria-text.component.html -->
+<h2>ARIA Label and Text Comparison</h2>
+
+<!-- Example of a button with aria-label and matching text -->
+<button aria-label="Submit form" [ngClass]="{'error': isError('Submit form', 'Submit form')}">Submit form</button>
+
+<!-- Example of a link with aria-label and matching text -->
+<a href="#" aria-label="Go to homepage" [ngClass]="{'error': isError('Go to homepage', 'Go to homepage')}">Go to homepage</a>
+
+<!-- Example of a button where aria-label doesn't match text -->
+<button aria-label="Submit form" [ngClass]="{'error': isError('Submit form', 'Submit')}">Submit</button>
+
+<!-- Example of a link where aria-label doesn't match text -->
+<a href="#" aria-label="Go to homepage" [ngClass]="{'error': isError('Go to homepage', 'Visit our homepage')}">Visit our homepage</a>
+
+

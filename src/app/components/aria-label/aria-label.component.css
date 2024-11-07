@@ -1,0 +1,62 @@
+/* app.component.css */
+
+/* Default styles for elements with aria-label */
+[aria-label]:before {
+    content: "🚨 aria-label: " attr(aria-label); /* Display the aria-label content */
+    border: 2px solid darkred; /* Dark red border to highlight the label */
+    color: darkred; /* Dark red text color */
+    display: inline-block; /* Makes the content inline with the element */
+    padding: 0 5px; /* Padding around the aria-label text */
+    margin: 2px 5px 2px 0; /* Margin to separate from the element */
+    border-radius: 5px; /* Rounded corners */
+    background: white; /* White background to make text stand out */
+    font-size: 14px; /* Font size for readability */
+    font-family: sans-serif; /* Sans-serif font for better readability */
+    font-weight: bold; /* Bold text for visibility */
+}
+
+/* Special styling for button with aria-label */
+button[aria-label]:before {
+    content: "⚠️ aria-label: " attr(aria-label); /* Add icon for buttons */
+    border-color: orange; /* Orange border for buttons */
+    color: black; /* Black text for better contrast */
+}
+
+/* Special styling for link with aria-label */
+a[aria-label]:before {
+    content: "⚠️ aria-label: " attr(aria-label); /* Same alert icon for links */
+    border-color: #0066cc; /* Blue border for links */
+    color: #0066cc; /* Blue text for links */
+}
+
+/* Special styling for div with aria-label */
+div[aria-label]:before {
+    content: "🔳 aria-label: " attr(aria-label); /* Add dialog icon for divs with aria-label */
+    border-color: green; /* Green border for divs */
+    color: green; /* Green text for divs */
+    background-color: #e8f5e9; /* Light green background */
+}
+
+/* Special styling for navigation with aria-label */
+nav[aria-label]:before {
+    content: "🔗 aria-label: " attr(aria-label); /* Navigation icon for aria-label */
+    border-color: #0288d1; /* Blue border for navigation */
+    color: #0288d1; /* Blue text for navigation */
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+/* Special styling for alert with aria-label */
+div[aria-label="error"]:before {
+    content: "🚨 aria-label: error";
+    border-color: red; /* Red border for alerts */
+    color: red; /* Red text for alerts */
+    background-color: #ffebee; /* Light red background */
+}
+
+/* Special styling for header with aria-label */
+header[aria-label]:before {
+    content: "📰 aria-label: " attr(aria-label); /* Header icon for aria-label */
+    border-color: #4caf50; /* Green border for header */
+    color: #4caf50; /* Green text for header */
+    background-color: #c8e6c9; /* Light green background */
+}
